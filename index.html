@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
+   <!--<meta name="viewport" content="width=device-width, initial-scale=1"> -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Femmes974</title>
@@ -10,13 +11,17 @@
     crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   <link rel="stylesheet" href="css/custom.css">
   <meta property="fb:app_id" content="" />
 </head>
 
 <body id="femme974Page" data-spy="scroll" data-target=".navbar">
   <!--HEADER & APPEL-URGENCE NAVBAR-->
-  <header class="d-flex">
+ 
+  <header>
+    <div class="col-sm-12">
+      <div class="container-fluid">   
     <div class="appel-urgence text-center text-white fixed-top p-4"> Urgence Appeler le 3119</div>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top nav-Header p-4">
       <a href="index.html">
@@ -29,41 +34,47 @@
       <div class="collapse navbar-collapse justify-content-md-end" id="navbars974">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#accueil">ACCUEIL</a>
+            <a class="nav-link" href="#accueil" id="homeBtn">ACCUEIL</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#qui-nousSommes">QUI NOUS SOMMES</a>
+            <a class="nav-link" href="#qui-nousSommes" id="quiSommeNousBtn">QUI NOUS SOMMES</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#nos-travaux">NOS TRAVAUX</a>
+            <a class="nav-link" href="#nos-travaux" id="nosTravauxBtn">NOS TRAVAUX</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#lient-utiles">LIENT UTILES</a>
+            <a class="nav-link" href="#lient-utiles" id="lientUtilesBtn">LIENT UTILES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#contact">CONTACT</a>
           </li>
           <li class="nav-item">
-            <button class="btn btn-success text-white">AGISSEZ</button>
+              <a href="https://www.helloasso.com/associations/femmes-974/adhesions/femmes974-adhesions-2016" target="_blank">
+            <button class="btn btn-success text-white">AGISSEZ</button></a>
           </li>
         </ul>
       </div>
     </nav>
+  
     <div class="slogan text-center text-white">
       <h1>A L'Ile De La Reunion,</br>
         Les Femmes prennent la Parole !</h1>
       <h3 class="text-danger">Stop violences</h3>
     </div>
+  </div>
+</div>
+
   </header>
+ 
   <!--MAIN CONTAINER OF THE SITE-->
-  <main class="container">
-    <section id="accueil">
+  <main class="container-fluid">
+    <section class="container" id="accueil">
       <div class="row">
         <div class="col-sm-4 p-1">
-          <div class="firstText">
+          <!-- <div class="firstText"> -->
             <div class="card">
               <div class="card-body">
-                <img src="img/reagir_3919.jpg" class="card-img-top" alt="reagir_3919">
+                <img src="img/reagir_3919.jpg" class="card-img-top" alt="reagir_3919" id="firstCard">
                 <div class="card-title">
                   <h5 class="text-dark text-center p-1">Victime De Violence</h5>
                 </div>
@@ -74,9 +85,9 @@
               </div>
             </div>
           </div>
-        </div>
+        <!-- </div> -->
         <div class="col-sm-4 p-1">
-          <div class="firstText">
+          <!-- <div class="firstText"> -->
             <div class="card">
               <div class="card-body">
                 <img src="img/briser_les_chaines.jpg" class="card-img-top" alt="briser_les_chaines">
@@ -89,12 +100,12 @@
               </div>
             </div>
           </div>
-        </div>
+        <!-- </div> -->
         <div class="col-sm-4 p-1">
-          <div class="firstText bg-gray">
+          <!-- <div class="firstText bg-gray"> -->
             <div class="card">
               <div class="card-body">
-                <img src="img/logo_AFECT.jpg" class="card-img-top" alt="logo_AFECT">
+                <img src="img/logo_AFECT.jpg" class="card-img-top" alt="logo_AFECT" id="secondCard">
                 <div class="card-title mt-4 p-3">
                   <h5 class="text-dark text-center P-5">L'Association Afect</h5>
                 </div>
@@ -104,9 +115,9 @@
               </div>
             </div>
           </div>
-        </div>
+        <!-- </div> -->
         <div class="col-md-12 col-sm-4 mt-2 mb-4 p-2">
-          <h2 class="text-center p-4">La Mission de L'Association</h2>
+          <h2 class="text-center p-4" id="mission">La Mission de L'Association</h2>
           <p>Femmes 974 a pour but l’étude, l’information, la défense des droits et des intérêts matériels et moraux
             tant collectifs qu’individuels des femmes de La Réunion et plus généralement la défense et la promotion des
             droits des femmes.
@@ -116,8 +127,8 @@
             dans tous les domaines de la vie privée, professionnelle et publique.
           </p>
         </div>
-        <div class="row  p-5">
-          <div class="col-sm-12  mt-5 p-5">
+        <div class="row">
+          <div class="col-sm-12  p-5">
             <h1 class="text-center">Nous devancons</h1>
           </div>
           <div class="col-sm-4 ">
@@ -132,8 +143,9 @@
               <i class="fas fa-balance-scale"></i>
             </div>
             <div class="card-textn mt-5 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil
-              quod possimus est ullam, </div>
+              quod possimus est ullam, 
           </div>
+        </div>
           <div class="col-sm-4">
             <div class="rounded-circle">
               <i class="far fa-handshake"></i>
@@ -144,14 +156,14 @@
           <div class="youtubePlayer mt-5">
             <iframe src="https://www.youtube.com/embed/wuRDBuhW1co?start=8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen></iframe>
-            <p class="text-center text-dark">Le film "FEMMES LEADERS" une aspiration pour les femme fortes </p>
+            <p class="text-center text-dark mb-5">Le film "FEMMES LEADERS" une aspiration pour les femmes fortes </p>
           </div>
         </div>
-        <div class="col-sm-12  p-5">
+        <div class="col-sm-12 mt-5 p-5">
           <div class="rectangle">
             <div class="text-center">
               <p>Il y a 70 ans les femmes françaises votaient pour la 1ère fois .</p>
-              <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#1erFois">Femme vote pour
+              <button type="button"  data-toggle="collapse" data-target="#1erFois">Femme vote pour
                 la prémiere fois</button>
               <div id="1erFois" class="collapse">
                 <img src="img/1erFois.jpg" alt="femme vote pour la prémiere fois">
@@ -162,7 +174,7 @@
         </div>
       </div>
     </section>
-    <section id="qui-nousSommes">
+     <section class="container" id="qui-nousSommes">
       <div class="row">
         <div class="col-sm-8">
           <div class="divPicture">
@@ -212,7 +224,7 @@
         </div>
       </div>
     </section>
-    <section id="nos-travaux">
+    <!-- <section id="nos-travaux">
       <div class="row">
         <div class="container border border-info">
         <div class="col-sm-12 mt-5">
@@ -266,7 +278,7 @@
     <section id="nos-travaux">
       <div class="fond-section-action">
         <h4>Nos Actions</h4>
-        <!-- Flyers -->
+        <!-- Flyers 
         <div class="container d-flex row bg-primary">
           <div class="row">
             <img class="img-fluid" src="https://via.placeholder.com/300x150">
@@ -276,7 +288,7 @@
           </div>
         </div>
 
-        <!-- Tableau -->
+        <!-- Tableau 
         <table class="table table-sm">
           <thead>
             <tr>
@@ -329,7 +341,7 @@
         <div>
           <a href="">Consulter les actions antèrieures</a>
         </div>
-        <!-- 2nd Tableau -->
+       2nd Tableau 
         <table class="table table-sm">
           <thead>
             <tr>
@@ -365,43 +377,23 @@
           </tbody>
         </table>
       </div>
-    </section>
+    </section> -->
 
 
 
 
   </main>
-  <footer id="contact">
+   <footer   id="contact">
     <a href="#myPage" title="To Top">
       <span class="glyphicon glyphicon-chevron-up"></span>
     </a>
   </footer>
-
-  <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script> 
   <script src="js/app.js"></script>
-  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-  <script>
-    $(function () {
-      // Smooth Scrolling
-      $('a[href*="#"]:not([href="#"])').click(function () {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname ==
-          this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-          if (target.length) {
-            $('html, body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
-            return false;
-          }
-        }
-      });
-    });
-  </script>
+  
+  
 
 
 </body>
