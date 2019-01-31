@@ -51,10 +51,9 @@ header {
     margin-right: 5px;
 }
 
-
-.slogan h1{        
-    color:#000;
-    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+header .slogan {
+    position: relative;
+     /* margin: 21% auto;  */
 }
 
 section {   
@@ -64,7 +63,9 @@ section {
 #accueil {
     display: block;
     height: auto;
-    width: 100%;    
+    /* margin-top:50px; */
+    width: 100%;
+    
 }
 #qui-nousSommes {
     height: auto;
@@ -88,13 +89,13 @@ section {
  }
  .fas{
     line-height: 2;
-     padding-left:17px;
+     padding-left:15px;
      font-size:32pt;
      color:#1ACCAB;
  }
  .far{
     line-height: 2;
-    padding-left:12px;
+    padding-left:15px;
     font-size:32pt;
     color:#1ACCAB;  
  }
@@ -106,7 +107,7 @@ section {
  }
 
  .divPicture{
-   
+   /* margin-top:150px;   */
    width:100%;
    height:auto;
    background-color: gray;
@@ -116,7 +117,7 @@ section {
  height:350px;
  }
  .rapport-sytheseRec{
- 
+  /* margin-top:150px; */s
   border:1px solid #107F6A;
   padding:10px;
   width:100%;
@@ -133,7 +134,7 @@ section {
     width:100%;
     height:350px;
     }
-/*.secondText {
+.secondText {
     border-radius: 3px;
     margin-top: 80px;
     height: auto;
@@ -175,10 +176,10 @@ iframe{
     height:315px;
 }
 footer {
-    margin-top: 20px;
-    height: 200px;
-    display: block;
-    background-color: rgb(7, 6, 6);
+    margin-top: 75px;
+    width: 100%;
+    height: 400px;
+    background-color: #000;
 }
 
 #box {
@@ -201,29 +202,21 @@ footer {
     height: 100px;
 }
 
+    /*TABLEAU*/
+
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     header{
      
-        background-image: url(../img/baillonée.jpg);
+        background: url(../img/baillonée.jpg) no-repeat center;
     }
     .youtubePlayer{
         width:100%;
     }
     iframe{
         width:100%;
-    }
-    header .slogan {
-        padding-top:250px;
-       
-    }
-    .slogan h1{        
-        color:#000;
-        text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
-    }
-    .slogan h3{
-        color:red;
-        text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
     }
 } 
 
