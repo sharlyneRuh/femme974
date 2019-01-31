@@ -117,7 +117,7 @@ section {
  height:350px;
  }
  .rapport-sytheseRec{
-  /* margin-top:150px; */s
+  /* margin-top:150px; */
   border:1px solid #107F6A;
   padding:10px;
   width:100%;
@@ -150,20 +150,6 @@ section {
     background-color: #201f1f88;
     color: #fff;
 }
-
-/* .firstText h1 { */
-    /* margin-top: 130px; */
-
-/* } */
-
-/* .secondText h1 { */
-    /* margin-top: 130px; */
-
-/* } */
-
-
-
-
 .youtubePlayer{
     margin-top:100px;
     margin-bottom: 20px;
@@ -175,6 +161,36 @@ iframe{
     width:560px;
     height:315px;
 }
+
+
+
+ #sections_btn_holder{
+	float:left;
+	width:144px;
+	height:46px;
+	padding-top:16px;
+}
+ #sections_panel{
+    /* position:absolute; */
+    display:none;
+	height:0px;
+	width:100%;
+	top:10px;
+	left:160px;
+	border-radius:0px 0px 8px 8px;
+	/* overflow:hidden; */
+	/* z-index:10000; */
+	transition: height 0.3s linear 0s;
+}
+ #sections_panel > div{
+	background:#333;
+	padding:20px;
+	height:238px;
+	margin:10px;
+	color:#FC0;
+}
+
+
 footer {
     margin-top: 75px;
     width: 100%;
