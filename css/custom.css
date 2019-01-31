@@ -51,9 +51,10 @@ header {
     margin-right: 5px;
 }
 
-header .slogan {
-    position: relative;
-     /* margin: 21% auto;  */
+
+.slogan h1{        
+    color:#000;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
 }
 
 section {   
@@ -63,9 +64,7 @@ section {
 #accueil {
     display: block;
     height: auto;
-    /* margin-top:50px; */
-    width: 100%;
-    
+    width: 100%;    
 }
 #qui-nousSommes {
     height: auto;
@@ -89,13 +88,13 @@ section {
  }
  .fas{
     line-height: 2;
-     padding-left:15px;
+     padding-left:17px;
      font-size:32pt;
      color:#1ACCAB;
  }
  .far{
     line-height: 2;
-    padding-left:15px;
+    padding-left:12px;
     font-size:32pt;
     color:#1ACCAB;  
  }
@@ -107,7 +106,7 @@ section {
  }
 
  .divPicture{
-   /* margin-top:150px;   */
+   
    width:100%;
    height:auto;
    background-color: gray;
@@ -117,7 +116,7 @@ section {
  height:350px;
  }
  .rapport-sytheseRec{
-  /* margin-top:150px; */
+ 
   border:1px solid #107F6A;
   padding:10px;
   width:100%;
@@ -134,7 +133,7 @@ section {
     width:100%;
     height:350px;
     }
-.secondText {
+/*.secondText {
     border-radius: 3px;
     margin-top: 80px;
     height: auto;
@@ -177,7 +176,6 @@ iframe{
 }
 footer {
     margin-top: 20px;
-    width: 100%;
     height: 200px;
     display: block;
     background-color: rgb(7, 6, 6);
@@ -214,6 +212,18 @@ footer {
     }
     iframe{
         width:100%;
+    }
+    header .slogan {
+        padding-top:250px;
+       
+    }
+    .slogan h1{        
+        color:#000;
+        text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+    }
+    .slogan h3{
+        color:red;
+        text-shadow: 1px 0 0 #fff, -1px 0 0 #fff, 0 1px 0 #fff, 0 -1px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
     }
 } 
 
