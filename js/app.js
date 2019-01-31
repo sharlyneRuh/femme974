@@ -40,14 +40,7 @@ $(document).ready(()=>{
     quiSommeNousSec.fadeOut();
     accueilSec.fadeOut();  
 });
-  contactBtn.on('click',()=>{
-  $(window).scroll((e)=>{
-    var scrollTop = $(this).scrollTop() + ($(window).height() / 2);
-    return scrollTop ;
-  });
-});
-
-});
+ 
 window.sr = ScrollReveal();
 sr.reveal('.navbar-brand',{
   duration:500,
@@ -61,3 +54,4 @@ sr.reveal('.slogan',{
     distance:'350px',
     easing: 'linear'
   });
+});
