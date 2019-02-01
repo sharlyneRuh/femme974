@@ -3,7 +3,7 @@ $(document).ready(()=>{
   const homeBtn =$('#homeBtn');
   const quiSommeNousBtn = $('#quiSommeNousBtn');
   const nosTravauxBtn = $('#nosTravauxBtn');
-  const lientUtilesBtn = $('#lientUtilesBtn');
+  const liensUtilesBtn = $('#liensUtilesBtn');
   const contactBtn = $('#contactBtn');
 
   
@@ -11,7 +11,7 @@ $(document).ready(()=>{
  let firstCard = $('#firstCard'); 
  let mission  = $('#mission');
  let nosTravauxSec =  $('#nos-travaux');
- let lientUtilesSec =  $('#lient-utiles');
+ let liensUtilesSec =  $('#liens-utiles');
  let contactSec = $('#contact');
  
 window.sr = ScrollReveal();
