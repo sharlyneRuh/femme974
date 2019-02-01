@@ -28,17 +28,20 @@ header {
     background-color: #ccc;
     width: 100%;
     height: 600px;
-    background-image: url(../img/second-1.jpg);
+    background-image: url(../img/libere_toi.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 
 
 .nav-Header {
-    /* margin-top: 50px; */
+    margin-top: 3rem; 
+    position: fixed;
+    z-index: 100;
     background-color: #107F6A;
     color: #fff;
     width: 100%;
-   
 }
 
 .nav-Header a {
