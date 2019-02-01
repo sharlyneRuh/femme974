@@ -93,8 +93,7 @@ section {
  }
  .fas{
     line-height: 2;
-     padding-left:15px;
-     font-size:32pt;
+     font-size:30pt;
      color:#1ACCAB;
  }
  .far{
@@ -193,6 +192,7 @@ iframe{
 .logoutile li{
     list-style: none;
     text-align: center;
+    
 }
 #firstTime{
     display:none;
