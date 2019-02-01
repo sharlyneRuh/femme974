@@ -192,11 +192,14 @@ iframe{
 	border-radius:0px 0px 8px 8px;
 	transition: height 0.3s linear 0s;
 }
-.logoutile li{
-    list-style: none;
-    text-align: center;
-    
-}
+.logoutile{
+  padding-top: 30px;
+  padding-bottom: 80px;
+   display: flex;
+    flex-flow: row-wrap;
+    justify-content: space-around;
+   
+   }
 #firstTime{
     display:none;
 }
