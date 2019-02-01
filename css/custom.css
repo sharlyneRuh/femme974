@@ -171,23 +171,26 @@ iframe{
 	padding-top:16px;
 }
  #sections_panel{
-    /* position:absolute; */
-    display:none;
-	height:0px;
+  	height:0px;
 	width:100%;
 	top:10px;
 	left:160px;
 	border-radius:0px 0px 8px 8px;
-	/* overflow:hidden; */
-	/* z-index:10000; */
 	transition: height 0.3s linear 0s;
 }
- #sections_panel > div{
-	background:#333;
-	padding:20px;
-	height:238px;
-	margin:10px;
-	color:#FC0;
+#firstTime{
+    display:none;
+}
+#tableaux-anterieurs{
+    height:0px;
+	width:100%;
+	top:10px;
+	left:160px;
+	border-radius:0px 0px 8px 8px;
+	transition: height 0.3s linear 0s;
+}
+.hideTableaux{
+    display:none;
 }
 
 

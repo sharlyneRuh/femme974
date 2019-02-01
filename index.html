@@ -3,8 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <!--<meta name="viewport" content="width=device-width, initial-scale=1"> -->
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Femmes974</title>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
@@ -16,7 +15,7 @@
   <meta property="fb:app_id" content="" />
 </head>
 
-<body id="femme974Page" data-spy="scroll" data-target=".navbar">
+<body id="femme974Page" >
   <header>
     <div class="col-sm-12">
       <div class="container-fluid">
@@ -123,9 +122,9 @@
             dans tous les domaines de la vie privée, professionnelle et publique.
           </p>
         </div>
-        <div class="row  p-5">
-          <div class="col-sm-12  mt-5 p-5">
-            <h5 class="text-center">Nous devons</h5>
+        <div class="row">
+          <div class="col-sm-12 p-2">
+            <h2 class="text-center">Nous devons</h2>
 
           </div>
           <div class="col-sm-4 ">
@@ -152,7 +151,7 @@
           </div>
         </div>
         <div class="youtubePlayer mt-5">
-          <iframe src="https://www.youtube.com/embed/wuRDBuhW1co?start=8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          <iframe src="https://www.youtube.com/embed/wuRDBuhW1co?start=8"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
           <p class="text-center text-dark mb-5">Le film "FEMMES LEADERS" une aspiration pour les femmes fortes </p>
         </div>
@@ -162,11 +161,11 @@
         <div class="rectangle">               
           <div class="text-center" >
             <p>Il y a 70 ans les femmes françaises votaient pour la 1ère fois .</p>
-            <button type="button" onclick="toggleNavPanel('sections_panel')">Femme vote pour
-              la prémiere fois<span id="navarrow">&#9662;</span></button>            
+            <input type="button" class="btn btn-outline-info" onclick="toggleNavPanel('sections_panel')" value="Femme vote pour
+              la prémiere fois"><span id="navarrow">&#9662;</span></button>            
           </div>
           <div id="sections_panel">
-              <img src="img/1erFois.jpg" alt="femme vote pour la prémiere fois">
+              <img src="img/1erFois.jpg" alt="femme vote pour la prémiere fois" id="firstTime">
             </div>
         </div>
       </div>
@@ -223,104 +222,10 @@
       </div>
     </section>
 
-    <!--  LIENS UTILES      -->
-    <section class="container" id="lient-utiles">
-      <div>
-        <h5>Les ong & institutions locales</h5>
-        <div>
-          <img src="https://via.placeholder.com/50">
-
-          <img src="https://via.placeholder.com/50">
-
-          <img src="https://via.placeholder.com/50">
-
-          <img src="https://via.placeholder.com/50">
-
-          <img src="https://via.placeholder.com/50">
-
-          <img src="https://via.placeholder.com/50">
-
-          <img src="https://via.placeholder.com/50">
-
-        </div>
-
-        <h5>Les ong nationales & internationales</h5>
-
-        <div>
-
-          <img src="https://via.placeholder.com/50">
-
-          <img src="https://via.placeholder.com/50">
-
-          <img src="https://via.placeholder.com/50">
-
-          <img src="https://via.placeholder.com/50">
-
-          <img src="https://via.placeholder.com/50">
-
-          <img src="https://via.placeholder.com/50">
-
-          <img src="https://via.placeholder.com/50">
-
-        </div>
-
-        <h5>La presse locale</h5>
-
-        <div>
-
-          <img src="https://via.placeholder.com/50">
-
-          <img src="https://via.placeholder.com/50">
-
-          <img src="https://via.placeholder.com/50">
-
-        </div>
-
-        <h5>Autres</h5>
-
-        <div>
-
-          <img src="https://via.placeholder.com/50">
-
-          <img src="https://via.placeholder.com/50">
-
-          <img src="https://via.placeholder.com/50">
-
-          <img src="https://via.placeholder.com/50">
-
-          <img src="https://via.placeholder.com/50">
-
-        </div>
-
-        <h5>Ressources documentaires</h5>
-
-        <div>
-
-          <img src="https://via.placeholder.com/50">
-
-          <img src="https://via.placeholder.com/50">
-
-          <img src="https://via.placeholder.com/50">
-
-        </div>
-
-      </div>
-
-
-
-    </section>
-
-
+   
     <section class="container" id="nos-travaux">
       <div class="fond-section-action">
-        <h4>Nos Actions</h4>
-        <div class="col text-center mb-5">
-          <p> Retrouvez-nous sur les réseaux sociaux pour participer:</p>
-          <div class="reseaux-sociaux d-flex justify-content-center">
-            <button class="btn btn-primary"><i class="fab fa-facebook"> Facebook</i></button>
-          </div>
-        </div>
-
+        <h2 class="text-center">Nos Actions</h2>
         <!-- Flyers -->
         <div class="container d-flex row bg-primary">
           <div class="row">
@@ -330,29 +235,40 @@
             <img src="https://via.placeholder.com/300x150">
           </div>
         </div>
+        
+        <div class="col text-center mt-1 mb-5">
+          <p> Retrouvez-nous sur les réseaux sociaux pour participer:</p>
+          <div class="reseaux-sociaux d-flex justify-content-center">
+            <a href="">
+              <button class="btn btn-primary"><i class="fab fa-facebook"> Facebook</i></button>
+          </a>
+        </div>
+      </div>
 
         <!-- Tableaux -->
         <!-- 1er Tableau -->
-        <table class="table table-sm">
-          <thead>
-            <tr>
-              2018
-            </tr>
-          </thead>
+        <table class="table table-sm mt-4">
+            <thead class="thead-dark">
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col">2018</th>                
+                </tr>
+              </thead>
           <tbody>
             <tr>
               <th scope="row">24/11</th>
-              <td>/</td>
+              <td></td>
               <td>Marche NousToutes974</td>
             </tr>
             <tr>
               <th scope="row">20/11</th>
-              <td>/</td>
+              <td></td>
               <td>Conférence de presse NousToutes974</td>
             </tr>
             <tr>
               <th scope="row">8/11</th>
-              <td>/</td>
+              <td></td>
               <td>AG - Lancement mouvement NousToutes974</td>
             </tr>
             <tr>
@@ -362,51 +278,54 @@
             </tr>
             <tr>
               <th scope="row">3/05</th>
-              <td>/</td>
+              <td></td>
               <td>AG Extraordinaire Femmes974</td>
             </tr>
             <tr>
               <th scope="row">15/03</th>
-              <td>/</td>
+              <td></td>
               <td>Préparation du lancement du festival ZétOIles</td>
             </tr>
             <tr>
               <th scope="row">8/03</th>
-              <td>/</td>
+              <td></td>
               <td>6 Femmes à l'honneur avec AFECT</td>
             </tr>
             <tr>
               <th scope="row">19/02</th>
-              <td>/</td>
+              <td></td>
               <td>Réunion La Cerise partenariat "Festival ZétOIles"</td>
             </tr>
           </tbody>
         </table>
-        <div>
-          <a href="">Consulter les actions antèrieures</a>
+       
+        <div class="rectangle">
+          <div  class="text-center">
+              <input type="button"  class="btn btn-outline-info" onclick="toggleTableauPanel('#tableaux-anterieurs')" value="Consulter les actions antèrieures"><span id="navarrowTab">&#9662;</span></button>
         </div>
         <div id="tableaux-anterieurs">
+          <div class="hideTableaux">
           <!-- 2nd Tableau -->
-          <table class="table table-sm">
-            <thead>
+          <table class="table table-sm mt-2">
+            <thead class="thead-dark">
               <tr>
-                2017
+                   <th scope="col">2017</th>                
               </tr>
             </thead>
             <tbody>
               <tr>
                 <th scope="row">20/11</th>
-                <td>/</td>
+                <td></td>
                 <td>RDV "O Café" rencontre réseau d'associations à St-Denis Va Piano</td>
               </tr>
               <tr>
                 <th scope="row">07/11</th>
-                <td>/</td>
+                <td></td>
                 <td>Manifestation contre les inégalités de salairs : RDV St-Paul Front de Mer</td>
               </tr>
               <tr>
                 <th scope="row">06/04</th>
-                <td>/</td>
+                <td></td>
                 <td>Atelier "mieux connaître les métiers de l'audiovisuel et du cinéma"</td>
               </tr>
               <tr>
@@ -416,42 +335,44 @@
               </tr>
               <tr>
                 <th scope="row">03/03</th>
-                <td>/</td>
+                <td></td>
                 <td>AG Extraordinaire Femmes974</td>
               </tr>
               <tr>
                 <th scope="row">23/02</th>
-                <td>/</td>
+                <td></td>
                 <td>Préparation du lancement du festival ZétOIles</td>
               </tr>
               <tr>
                 <th scope="row">15/02</th>
-                <td>/</td>
+                <td></td>
                 <td>6 Femmes à l'honneur avec AFECT</td>
               </tr>
             </tbody>
           </table>
           <!-- 3eme Tableau -->
           <table class="table table-sm">
-            <thead>
-              <tr>
-                2016
-              </tr>
-            </thead>
+              <thead class="thead-dark">
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col">2016</th>                
+                  </tr>
+                </thead>           
             <tbody>
               <tr>
                 <th scope="row">09/12</th>
-                <td>/</td>
+                <td></td>
                 <td>Marche NousToutes974</td>
               </tr>
               <tr>
                 <th scope="row">25-26/11</th>
-                <td>/</td>
+                <td></td>
                 <td>Conférence de presse NousToutes974</td>
               </tr>
               <tr>
                 <th scope="row">16/09</th>
-                <td>/</td>
+                <td></td>
                 <td>AG - Lancement mouvement NousToutes974</td>
               </tr>
               <tr>
@@ -461,33 +382,35 @@
               </tr>
               <tr>
                 <th scope="row">08/03</th>
-                <td>/</td>
+                <td></td>
                 <td>AG Extraordinaire Femmes974</td>
               </tr>
             </tbody>
           </table>
-        </div>
+       
         <!-- 4eme Tableau -->
         <table class="table table-sm">
-          <thead>
-            <tr>
-              2015
-            </tr>
-          </thead>
+            <thead class="thead-dark">
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col">2015</th>                
+                </tr>
+              </thead>
           <tbody>
             <tr>
               <th scope="row">21/10</th>
-              <td>/</td>
+              <td></td>
               <td>Marche NousToutes974</td>
             </tr>
             <tr>
               <th scope="row">08/10</th>
-              <td>/</td>
+              <td></td>
               <td>Conférence de presse NousToutes974</td>
             </tr>
             <tr>
               <th scope="row">01-02/10</th>
-              <td>/</td>
+              <td></td>
               <td>AG - Lancement mouvement NousToutes974</td>
             </tr>
             <tr>
@@ -497,42 +420,44 @@
             </tr>
             <tr>
               <th scope="row">15/05</th>
-              <td>/</td>
+              <td></td>
               <td>AG Extraordinaire Femmes974</td>
             </tr>
             <tr>
               <th scope="row">06/03</th>
-              <td>/</td>
+              <td></td>
               <td>Préparation du lancement du festival ZétOIles</td>
             </tr>
             <tr>
               <th scope="row">30/01</th>
-              <td>/</td>
+              <td></td>
               <td>6 Femmes à l'honneur avec AFECT</td>
             </tr>
           </tbody>
         </table>
         <!-- 5eme Tableau -->
         <table class="table table-sm">
-          <thead>
-            <tr>
-              2014
-            </tr>
-          </thead>
+            <thead class="thead-dark">
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col">2014</th>                
+                </tr>
+              </thead>
           <tbody>
             <tr>
               <th scope="row">17/12</th>
-              <td>/</td>
+              <td></td>
               <td>Marche NousToutes974</td>
             </tr>
             <tr>
               <th scope="row">23/05</th>
-              <td>/</td>
+              <td></td>
               <td>Conférence de presse NousToutes974</td>
             </tr>
             <tr>
               <th scope="row">08/03</th>
-              <td>/</td>
+              <td></td>
               <td>AG - Lancement mouvement NousToutes974</td>
             </tr>
             <tr>
@@ -544,25 +469,27 @@
         </table>
         <!-- 6eme Tableau -->
         <table class="table table-sm">
-          <thead>
-            <tr>
-              2013
-            </tr>
-          </thead>
+            <thead class="thead-dark">
+                <tr>
+                  <th scope="col"></th>
+                  <th scope="col"></th>
+                  <th scope="col">2013</th>                
+                </tr>
+              </thead>
           <tbody>
             <tr>
               <th scope="row">/</th>
-              <td>/</td>
+              <td></td>
               <td>Marche NousToutes974</td>
             </tr>
             <tr>
               <th scope="row">03/05</th>
-              <td>/</td>
+              <td></td>
               <td>Conférence de presse NousToutes974</td>
             </tr>
             <tr>
               <th scope="row">05/04</th>
-              <td>/</td>
+              <td></td>
               <td>AG - Lancement mouvement NousToutes974</td>
             </tr>
             <tr>
@@ -572,16 +499,17 @@
             </tr>
             <tr>
               <th scope="row">/</th>
-              <td>/</td>
+              <td></td>
               <td>AG Extraordinaire Femmes974</td>
             </tr>
             <tr>
               <th scope="row">01/03</th>
-              <td>/</td>
+              <td></td>
               <td>Préparation du lancement du festival ZétOIles</td>
             </tr>
           </tbody>
         </table>
+       
         <!-- 7eme Tableau -->
         <table class="table table-sm">
           <thead>
@@ -592,24 +520,30 @@
           <tbody>
             <tr>
               <th scope="row">08/03</th>
-              <td>/</td>
+              <td></td>
               <td>Marche NousToutes974</td>
             </tr>
             <tr>
               <th scope="row">/</th>
-              <td>/</td>
+              <td></td>
               <td>Conférence de presse NousToutes974</td>
             </tr>
           </tbody>
         </table>
-
+      </div>
+ </div>
+</div>
         <!-- dernier Tableau -->
-        <table class="table table-sm">
-          <thead>
-            <tr>
-              Documents Archivés
-            </tr>
-          </thead>
+        <table class="table table-sm mt-4">
+          
+              <thead class="thead-dark">
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    <th scope="col"> Documents Archivés</th>                
+                  </tr>
+                </thead>
+            
           <tbody>
             <tr>
               <th scope="row">2015-2016</th>
@@ -640,7 +574,97 @@
         </table>
       </div>
     </section>
-
+       <!-- LIENS UTILES   -->
+   <section class="container" id="lient-utiles">
+     <div class= "col-sm-12">
+       <h2 class="text-center"> Liens Utiles</h2>
+     </div>
+  <div class="col-md-12">
+    <h5>Les ong & institutions locales</h5>
+  
+    <div>
+  
+     <a class= "logoutile" href="http://www.femmes-entrepreneurs.re/" target="_blank"> <img src="img/LOGO-DDF.jpg"> </a> 
+  
+     <a class= "logoutile" href="" target="_blank"> <img src="img/logo_EFTICOI.jpeg"> </a>
+  
+     <a class= "logoutile" href="" target="_blank"> <img src="img/logo_AFECT.jpg"> </a>
+  
+     <a class= "logoutile" href="" target="_blank"> <img src="img/Logo-AFOI.jpg"> </a>
+  
+     <a class= "logoutile" href="https://entreprendreaufeminin.re/" target="_blank"> <img src="img/News-logo-EFOIR-xs.jpg"> </a>
+  
+    <a class= "logoutile" href="http://www.chancegal.com/" target="_blank"> <img src="img/logo-chancegal.jpg"> </a>
+  
+     <a class= "logoutile" href="http://reunion.planning-familial.org/" target="_blank"> <img src="img/logo_planingfamilial.jpeg"> </a>
+  
+    </div>
+  
+    <h5>Les ong nationales & internationales</h5>
+  
+    <div>
+  
+     <a class= "logoutile" href="http://www.unwomen.org/fr" target="_blank"> <img src="img/logo_ONUfemmes.jpg"> </a>
+  
+     <a class= "logoutile" href="https://www.eveprogramme.com/" target="_blank"> <img src="img/LOGO-EVE.jpg"> </a>
+  
+    <a class= "logoutile" href="http://www.efoi.biz/index.php/fr/" target="_blank"> <img src="img/LOGO-EFOI-xs.jpg"> </a>
+  
+     <a class= "logoutile" href="http://www.mmf-france.fr/" target="_blank"> <img src="img/logo-mmf.jpg"> </a>
+  
+     <a class= "logoutile" href="https://www.defenseurdesdroits.fr/" target="_blank"> <img src="img/défenseur_droit.jpeg"> </a>
+  
+     <a class= "logoutile" href="https://www.noustoutes.org/" target="_blank"> <img src="img/logo_noustoutes.jpeg"> </a>
+  
+     <a class= "logoutile" href="https://www.egalite-femmes-hommes.gouv.fr/" target="_blank"> <img src="img/logo_delegationregionaledroitfemmes.jpeg"> </a>
+  
+    </div>
+  
+    <h5>La presse locale</h5>
+  
+    <div>
+  
+     <a class= "logoutile" href="http://www.lequotidien.re/" target="_blank"> <img src="img/logo-lequotidien.jpg"> </a>
+  
+     <a class= "logoutile" href="https://www.clicanoo.re/" target="_blank"> <img src="img/logo-clicanoo.jpg"> </a>
+  
+     <a class= "logoutile" href="https://www.zinfos974.com/" target="_blank"> <img src="img/logo-zinfos.jpg"> </a>
+  
+    </div>
+  
+    <h5>Autres</h5>
+  
+    <div>
+  
+     <a class= "logoutile" href="http://femmes.gouv.fr/wp-content/uploads/2015/03/Chiffres-cles-2015_Lessentiel.pdf" target="_blank"> <img src="img/femmmes974-PARITE.jpg"> </a>
+  
+     <a class= "logoutile" href="http://www.orviff.re/" target="_blank"> <img src="img/logo_ORVIFF.jpg"> </a>
+  
+     <a class= "logoutile" href="" target="_blank"> <img src="img/logo_franceinitiative.jpg"> </a>
+  
+     <a class= "logoutile" href="http://www.education.gouv.fr/cid4006/egalite-des-filles-et-des-garcons.html" target="_blank"> <img src="img/logo_ministrejeunesse.jpeg"> </a>
+  
+     <a class= "logoutile" href="https://www.franceactive.org/?id=82" target="_blank"> <img src="img/logo_fgif.jpeg"> </a>
+  
+    </div>
+  
+    <h5>Ressources documentaires</h5>
+  
+    <div>
+  
+     <a class= "logoutile" href="https://www.insee.fr/fr/statistiques/1288873" target="_blank"> <img src="img/Logo_Insee.jpg"> </a>
+  
+     <a class= "logoutile" href="https://www.declikeco.re/core/zone_theme.php?zone=214&r=1206&id=697" target="_blank"> <img src="img/logo_CCI.jpg"> </a>
+  
+     <a class= "logoutile" href="http://www.artisanat974.re/Accueil.aspx" target="_blank"> <img src="img/logo_CMA-Reunion.jpg"> </a>
+  
+    </div>
+  
+   </div>
+  
+      
+      
+     </section>
 
 
   </main>
@@ -675,26 +699,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
   <script src="js/app.js"></script>
-  <script>
-    function toggleNavPanel(x) {
-      var panel = document.getElementById(x),
-        navarrow = document.getElementById("navarrow"),
-        maxH = "800px";
-      if (panel.style.height == maxH) {
-        panel.style.height = "0px";
-        navarrow.innerHTML = "&#9662;";
-      } else {
-       panel.style.display = "block";
-        panel.style.marginTop="100px";
-        panel.style.marginBottom="100px";
-        panel.style.height = maxH;
-        navarrow.innerHTML = "&#9652;";
-      }
-    }
-  </script>
-
-
-
+ 
 </body>
 
 </html>
