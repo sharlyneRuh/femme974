@@ -3,7 +3,7 @@ $(document).ready(()=>{
   const homeBtn =$('#homeBtn');
   const quiSommeNousBtn = $('#quiSommeNousBtn');
   const nosTravauxBtn = $('#nosTravauxBtn');
-  const liensUtilesBtn = $('#liensUtilesBtn');
+  const lientUtilesBtn = $('#lientUtilesBtn');
   const contactBtn = $('#contactBtn');
 
   
@@ -11,16 +11,18 @@ $(document).ready(()=>{
  let firstCard = $('#firstCard'); 
  let mission  = $('#mission');
  let nosTravauxSec =  $('#nos-travaux');
- let liensUtilesSec =  $('#liens-utiles');
+ let lientUtilesSec =  $('#lient-utiles');
  let contactSec = $('#contact');
+
+
  
 window.sr = ScrollReveal();
-sr.reveal('header',{
+/* sr.reveal('header',{
   duration:500,
   origin:'top',
   distance:'250px',
   easing: 'linear'
- });
+ });*/
  sr.reveal('.slogan',{
     duration:500,
     origin:'top', 
@@ -110,3 +112,25 @@ const toggleNavPanel =((x) =>{
 
     }
    });
+
+
+   //  Button header responsive
+     const navbars974 = document.querySelector('#navbars974');
+     navbars974.addEventListener('click',(e)=>{
+       // Script to open and close sidebar
+     function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+        
+    w3_open();
+    
+     }); 
+     
+ 
+    function w3_close() {
+     document.getElementById("mySidebar").style.display = "none";
+     document.getElementById("myOverlay").style.display = "none";
+       }
+
+       
