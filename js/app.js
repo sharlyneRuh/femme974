@@ -1,62 +1,56 @@
 $(document).ready(()=>{
-/**NAVBAR NAVIGATION LINK */
-  const homeBtn =$('#homeBtn');
-  const quiSommeNousBtn = $('#quiSommeNousBtn');
-  const nosTravauxBtn = $('#nosTravauxBtn');
-  const lientUtilesBtn = $('#lientUtilesBtn');
-  const contactBtn = $('#contactBtn');
-
+  /**NAVBAR NAVIGATION LINK */
+    const homeBtn =$('#homeBtn');
+    const quiSommeNousBtn = $('#quiSommeNousBtn');
+    const nosTravauxBtn = $('#nosTravauxBtn');
+    const lientUtilesBtn = $('#lientUtilesBtn');
+    const contactBtn = $('#contactBtn');
   
- /**section to display */
+/**section to display */
  let firstCard = $('#firstCard'); 
  let mission  = $('#mission');
  let nosTravauxSec =  $('#nos-travaux');
  let lientUtilesSec =  $('#lient-utiles');
  let contactSec = $('#contact');
 
-
  
 window.sr = ScrollReveal();
-/* sr.reveal('header',{
+sr.reveal('header',{
   duration:500,
   origin:'top',
   distance:'250px',
   easing: 'linear'
- });*/
+ });
  sr.reveal('.slogan',{
-    duration:500,
-    origin:'top', 
-    distance:'350px',
-    easing: 'linear'
-  });
- 
-  homeBtn.on('click',()=>{ 
-  sr.reveal(firstCard,{
-    duration:500,
-    origin:'right', 
-    distance:'-350px',
-    easing: 'linear'
-  });
-});
-
-homeBtn.on('click',()=>{ 
-sr.reveal(secondCard,{
-  duration:500,
-  origin:'left', 
-  distance:'-350px',
-  easing: 'linear'
-});
-});
-homeBtn.on('click',()=>{ 
-  sr.reveal(mission,{
-    duration:500,
-    origin:'left', 
-    distance:'-350px',
-    easing: 'linear'
-  });
-  });
- 
-
+     duration:500,
+     origin:'top', 
+     distance:'350px',
+     easing: 'linear'
+   });
+   homeBtn.on('click',()=>{ 
+       sr.reveal(firstCard,{
+         duration:500,
+         origin:'right', 
+         distance:'-150px',
+         easing: 'linear'
+       });
+     });
+     homeBtn.on('click',()=>{ 
+         sr.reveal(secondCard,{
+           duration:500,
+           origin:'left', 
+           distance:'-100px',
+           easing: 'linear'
+         });
+       });
+       homeBtn.on('click',()=>{ 
+           sr.reveal(mission,{
+             duration:500,
+             origin:'left', 
+             distance:'-100px',
+             easing: 'linear'
+           });
+           });
   $(function () {
     // Smooth Scrolling
     $('a[href*="#"]:not([href="#"])').click(function () {
@@ -74,7 +68,7 @@ homeBtn.on('click',()=>{
     });
   });
 });
-
+/** les femmes françaises votaient*/
 const toggleNavPanel =((x) =>{
     let panel = document.getElementById(x),
        navarrow = document.getElementById("navarrow"),
@@ -94,7 +88,7 @@ const toggleNavPanel =((x) =>{
        navarrow.innerHTML = "&#9652;";
      }
    });
-
+   /**btn actions antèrieures (tableaux )*/
    const toggleTableauPanel  =((x) =>{
     let tableaux = document.querySelector(x),
     navarrowTab = document.querySelector("#navarrowTab"),
@@ -117,20 +111,27 @@ const toggleNavPanel =((x) =>{
    //  Button header responsive
      const navbars974 = document.querySelector('#navbars974');
      navbars974.addEventListener('click',(e)=>{
-       // Script to open and close sidebar
-     function w3_open() {
-      document.getElementById("mySidebar").style.display = "block";
-      document.getElementById("myOverlay").style.display = "block";
-    }
-        
-    w3_open();
-    
-     }); 
-     
- 
-    function w3_close() {
-     document.getElementById("mySidebar").style.display = "none";
-     document.getElementById("myOverlay").style.display = "none";
+       let sidebar = document.querySelector('#mySidebar');
+        if(window.innerWidth >= 768 ){
+        sidebar.style.marginTop = "-235px";
+       }else{
+         sidebar.style.marginTop = "-369px";
        }
-
+       if(window.innerWidth >= 375){
+        sidebar.style.marginTop = "-369px";
+       }
        
+        
+       openSidebar();
+       console.log(window.innerWidth)    
+     });
+      // Script to open and close sidebar
+     const openSidebar=(()=> {
+      document.getElementById("mySidebar").style.display = "block";
+     
+    });
+ 
+    const closeSidebar =(()=> {
+     document.getElementById("mySidebar").style.display = "none";
+    
+       });
